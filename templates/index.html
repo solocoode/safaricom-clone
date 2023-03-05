@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'assets/safaricom-favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Safaricom</title>
+</head>
+<body>
+<!--navbar-->
+<div class="container-fluid">
+  <nav class="navbar nbr navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav p-0 m-0">
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">PERSONAL</a>
+          </li>
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">BUSINESS</a>
+          </li>
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">INVESTOR RELATIONS</a>
+          </li>
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">FRAUD AWARENESS</a>
+          </li>
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">MEDIA</a>
+          </li>
+          <li class="nav-item-navbar">
+            <a class="nav-link text-white" href="#">CUSTOMER SERVICE</a>
+          </li>
+        </ul>
+        <div class="button ms-5">
+            <button type="button" class="btn btn-light text-success" id="btn1-nav">New Customer</button>
+            <button type="button" class="btn btn-dark text-white ms-4" id="btn2-nav">Help</button>
+        </div>
+        <div class="end-nav ms-3">
+            <a href="" class="text-white"><img src="{% static 'assets/search-icon.jpg' %}" alt="" height="20px"> All sites</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+ <!--paginatiom-->
+ <nav class="navbar navbar-expand-lg bg-tertiary">
+    <div class="container-fluid justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="logo ms-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="{% static 'assets/safaricom-logo-green.png' %}" alt="Logo">
+                </a>
+            </div>
+            <ul class="container-fluid navbar-nav justify-content-center ">
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold pe-5 ps-5 " href="#">Voice</a>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link text-black fw-bold pe-5 ps-5" href="#">Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold pe-5 ps-5" href="#">M-PESA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold pe-5 ps-5">Home Fibre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold pe-5 ps-5">Value Added Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black fw-bold pe-5 ps-5">Buy A Device</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  <wrapper class="conatiner-fluid">
+    <div class="card text-bg-dark">
+      <div class="wrapper-img">
+          <img src="{% static 'assets/african-savannah.jpg' %}" alt="" width="100%" height="500px">
+      </div>
+      <div class="card-img-overlay">  
+        <p class="card-text">
+          The Gong rocks of Lewa offer the sights and <wbr> sounds of a rich cultural heritage. This <wbr> #PlaceofHope unites people around this timeless place. <wbr>
+          #Safaricom2023Calendar
+        </p>
+        <div class="card-btn-overlay">
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </wrapper>
+  <!--table of popular links-->
+  <div class="container">
+    <div class="hover-table">
+      <div class="heading-table">
+        <span>Popular Links</span>
+      </div>
+      <div class="data-table">
+        <table class="table row-cols-4">
+          <!--<thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>-->
+          <tbody class="gap">
+            <tr class="col-3">
+              <td class="tb-head">VOICE</td>
+              <td class="tb-head">INTERNET</td>
+              <td class="tb-head">M-PESA</td>
+              <td class="tb-head">OTHER SERVICES</td>
+            </tr>
+            <tr class="col-3">
+              <td class="tb-data">Post-Pay Packages</td>
+              <td class="tb-data">Data Bundles</td>
+              <td class="tb-data">M-PESA</td>
+              <td class="tb-data">Lipa na Bonga Points</td>
+            </tr>
+            <tr class="col-3">
+              <td class="tb-data">Zuri</td>
+              <td class="tb-data">Home Fibre</td>
+              <td class="tb-data">How to  Fuliza</td>
+              <td class="tb-data">Lipa Mdogo Mdogo Phones</td>
+            </tr>
+            <tr class="col-3">
+              <td class="tb-data">Voice Tariffs</td>
+              <td class="tb-data">Free Facebook</td>
+              <td class="tb-data">Paypal M-PESA</td>
+              <td class="tb-data">M-PESA GlobalPay</td>
+            </tr>
+            <tr class="col-3">
+              <td class="tb-data">Tunukiwa Minutes</td>
+              <td class="tb-data">Safaricom Roaming Data Bundles</td>
+              <td class="tb-data">M-PESA Withdarwal Charges 2022</td>
+              <td class="tb-data">Tecno Camon 19</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--what's new-->
+ <div class="container-fluid bg-secondary-subtle">
+  <div class="container-whats-new">
+    <div class="heading-what">
+      <h1>What's new</h1>
+    </div>
+    <div class="p-head">
+      <p>Find out more about our latest innovative products and services made for you</p>
+    </div>
+   <div class="cards-whats">
+    <div class="card-1 col-5"> 
+      <img src="{% static 'assets/go-monthly.jpg' %}" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title-monthly">Go Monthly Plan</h5>
+        <p class="card-text-what">
+          This  offer gives you the best value and control on your monthly browsing, calling and texting needs. 
+          You have the freedom to select a plan that works for you.
+        </p>
+        <button class="btn-explore">
+          <a href="#">
+            <span class="span-explore">Explore Plans</span>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card col-4">
+      <img src="{% static 'assets/one-voice.png' %}" class="card-img-top-tariff" alt="" >
+      <div class="card-body">
+        <h5 class="card-title">One Voice Tariff</h5>
+        <p class="card-text-one">
+          GET 50% airtime bonus with every top-up
+        </p>
+        <p class="card-text-voice">
+          Dial *544#  to get started
+        </p>
+        <button class="btn-see">
+          <a href="#">
+            <span>See Tariffs</span>
+          </a>
+        </button>
+      </div>
+    </div>
+    <div class="card col-3">
+      <div class="card-body">
+        <h1 class="card-title-tx">Find out how much talktime you can get with your button</h1>
+        <div class="input-group">
+          <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+          <input type="text" class="fm-amount" placeholder="Enter Amount">
+        </div>
+        <hr class="hr-what">
+        <span> Your Minutes: 0 Minutes</span>
+        <hr class="hr-what">
+        <button class="btn-buy">
+          <a href="">
+            <span class="tx-buy-now">
+              Buy Now
+          </span>
+          </a>
+      </button>
+      </div>
+    </div>
+   </div>
+   </div>
+ </div>
+ <!--my internet connection for-->
+ <div class="container">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="heading-internet">
+        <h1>Internet Connection For</h1>
+      </div>
+      <ul>
+        <li id="#my-phone">
+          <a class="navbar-brand" href="#my-phone">My Phone</a>     
+        </li>
+        <hr>
+        <li id="#my-home">
+          <a class="navbar-brand" href="#my-home">My Home</a>
+        </li>
+        <hr>
+        <li id="#my-business">
+          <a class="navbar-brand" href="#my-business">My Business</a>
+        </li>
+        <hr>
+      </ul>
+      </div>
+    </div>
+  </nav>
+  <!--my phone page cards-->
+  <div class="my-phone" id="my-phone">
+    <div class="container m-5">
+      <div class="container-data-internetr">
+       <div class="cards-whats">
+        <div class="card col-4"> 
+          <img src="{% static 'assets/data1.jpg' %}" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title-monthly">Data</h5>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#">Prepay Service</a>
+                  <img src="{% static 'assets/next arrow.png' %}" alt="" class="next-arrow-internet">
+                </li>
+                <li class="list-group-item">
+                  <a href="#">Postpay Service</a>
+                  <img src="{%  static 'assets/next arrow.png' %}" alt="" class="next-arrow-internet">
+                </li>
+                <li class="list-group-item">
+                  <a href="#">Promotions & Offers</a>
+                  <img src="{% static 'assets/next arrow.png' %}" alt="" class="next-arrow-internet">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-4">
+          <img src="{% static 'assets/offers-1.png' %}" class="card-img-top-tariff" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Offers</h5>
+            <div class="card">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <a href="#">Youtube Bundles Promo</a>
+                  <img src="{% static 'assets/next arrow.png' %}" alt="" class="next-arrow-internet">
+                </li>
+                <li class="list-group-item">
+                  <a href="#">Angaza Bundles</a>
+                  <img src="{% static 'assets/next arrow.png' %}" alt="" class="next-arrow-internet">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card col-4">
+          <div class="card-body">
+            <h1 class="card-title-tx">Find out how much Data you can get with your budget</h1>
+            <div class="input-group">
+              <!-- <span class="input-group-text" id="basic-addon1">@</span> -->
+              <input type="text" class="fm-amount" placeholder="Enter Amount">
+            </div>
+            <hr class="hr-what">
+            <span> Your Data: 0.0Mbs</span>
+            <hr class="hr-my-phone">
+            <button class="btn-buy">
+              <a href="">
+                <span class="tx-buy-now">
+                  Buy Now
+              </span>
+              </a>
+          </button>
+          </div>
+        </div>
+       </div>
+       </div>
+     </div>
+  </div>
+<!--my-home cards-->
+<!--my business cards-->
+<!--m-pesa section-->
+  <div class="container">
+    <div class="container-fluid bg-secondary-subtle">
+      <div class="container-whats-new">
+        <div class="heading-what">
+          <h1>M-pesa</h1>
+        </div>
+        <div class="p-head">
+          <p>Send, receive and access nmonet wherever you are.</p>
+        </div>
+       <div class="cards-whats">
+        <div class="card col-4">
+          <img src="{% static 'assets/fuliza.jpg' %}" class="card-img-top-tariff" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Fuliza</h5>
+            <p class="card-text-one">
+              Complete your transactions even with insufficient funds
+            </p>
+            <p class="card-text-voice">
+              Dial *234#  to get started
+            </p>
+            <button class="btn-see">
+              <a href="#">
+                <span>About Fuliza</span>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="card col-4">
+          <img src="{% static 'assets/pochi.jpg' %}" class="card-img-top-tariff" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Pochi La Biashara</h5>
+            <p class="card-text-one">
+              Receive and separate business funds from personal funds
+            </p>
+            <p class="card-text-voice">
+              Dial *334#  to get started
+            </p>
+            <button class="btn-see">
+              <a href="#">
+                <span>Learn More</span>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="card col-4">
+          <div class="card-body">
+            <h1 class="card-title-tx">Find out just how much transacting with M-PESA will cost you</h1>
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle" id="btn-dropdown-mpesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Withdraw from Agent
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Withdraw from Agent</a></li>
+                <li><a class="dropdown-item" href="#">Withdraw from Atm</a></li>
+                <li><a class="dropdown-item" href="#">Transfer to M-PESA Users, Pochi La Biashara & Business Till to Customers</a></li>
+                <li><a class="dropdown-item" href="#">Transfer top Other Registered Mobile Users</a></li>
+                <li><a class="dropdown-item" href="#">Transfer to Unregistered Users</a></li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <button class="btn btn dropdown-toggle" id="btn-dropdown-mpesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Select Amount Range
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Select Amount Range</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 1-49</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 50-100</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 101-500</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 501-1000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 1001-1500</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 1501-2500</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 2501-3500</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 3501-5000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 5001-7500</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 7501-10000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 10001-15000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 15001-20000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 20001-35000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 35001-50000</a></li>
+                <li><a class="dropdown-item" href="#">Ksh 50001-150000</a></li>
+              </ul>
+            </div>
+            <hr class="hr-what">
+            <span>Ksh</span>
+            <hr class="hr-what">
+          </div>
+        </div>
+        <div class="card col-4">
+          <img src="{% static 'assets/lipa-na-mpesa.jpg' %}" class="card-img-top-tariff" alt="" >
+          <div class="card-body">
+            <h5 class="card-title">Lipa Na M-PESA</h5>
+            <p class="card-text-one">
+              You can buy goods and pay through your phone
+            </p>
+            <p class="card-text-voice">
+              Get started now
+            </p>
+            <button class="btn-see">
+              <a href="#">
+                <span>Apply For Till Number</span>
+              </a>
+            </button>
+          </div>
+        </div>
+        <!--make this thing a carousel-->
+       </div>
+       </div>
+     </div>
+  </div>
+ </div>
+ <!--business solutions-->
+ <div class="container">
+  <div class="container-fluid bg-secondary-subtle">
+    <div class="container-whats-new">
+      <div class="heading-what">
+        <h1>Busines Solutions</h1>
+      </div>
+      <div class="p-head">
+        <p>We seek to provide cutting edge solutions for your business needs</p>
+      </div>
+     <div class="cards-whats">
+      <div class="card col-4">
+        <img src="{% static 'assets/internet-for-business.jpg' %}" class="card-img-top-tariff" alt="" >
+        <div class="card-body">
+          <h5 class="card-title">Internet For Business</h5>
+          <p class="card-text-one">
+            Connect your business to the world with reliable and affordable internet
+          </p>
+          <p class="card-text-voice">
+            Simple, Transparent and Honest
+          </p>
+          <button class="btn-see">
+            <a href="#">
+              <span>Internet Business</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="card col-4">
+        <img src="{% static 'assets/cloud-solutions.jpg' %}" class="card-img-top-tariff" alt="" >
+        <div class="card-body">
+          <h5 class="card-title">Cloud Solutions</h5>
+          <p class="card-text-one">
+            Put your business ahead of the competition with technology and the latest online services
+          </p>
+          <p class="card-text-voice">
+            Simple, Transparent and Honest
+          </p>
+          <button class="btn-see">
+            <a href="#">
+              <span>Cloud Services</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="card col-4">
+        <img src="{% static 'assets/businesstill.jpg' %}" class="card-img-top-tariff" alt="" >
+        <div class="card-body">
+          <h5 class="card-title">Business till</h5>
+          <p class="card-text-one">
+            Collect payments easily weith no time limitations through M-PESA
+          </p>
+          <p class="card-text-voice">
+            Simple, Transparent and Honest
+          </p>
+          <button class="btn-see">
+            <a href="#">
+              <span>M-PESA business till</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="card col-4">
+        <img src="{% static 'assets/shiriki.png' %}" class="card-img-top-tariff" alt="" >
+        <div class="card-body">
+          <h5 class="card-title">Shiriki plan for business</h5>
+          <p class="card-text-one">
+            Get affordable internet and calling rates for your small or medium sized business
+          </p>
+          <p class="card-text-voice">
+            Simple, Transparent and Honest
+          </p>
+          <button class="btn-see">
+            <a href="#">
+              <span>Mobile Solutions</span>
+            </a>
+          </button>
+        </div>
+      </div>
+      <!--make this thing a carousel-->
+     </div>
+     </div>
+   </div>
+</div>
+</div>
+</div>  
+</body>
+</html>
